@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <Loggers>
+		<Logger name="com.my.api" level="warn" additivity="true">
+			<AppenderRef ref="File" />
+		</Logger>
+		
+	    <!-- Logger for apache 3rd-party code -->
+    	<Logger name="org.apache" level="warn" >
+			<AppenderRef ref="File" />
+		</Logger>
+
+		<!-- Logger for spring code -->
+		<Logger name="org.springframework" level="warn" additivity="true">
+			<AppenderRef ref="File" />
+		</Logger>
+
+		<Root level="warn">
+			<AppenderRef ref="Console" />
+		</Root>
+
+	</Loggers>
+</Configuration>
+

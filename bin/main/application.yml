@@ -1,0 +1,8 @@
+api:
+  key: b032ea7d8f064ea5bbc621d83570b64c
+  
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true  
+      
